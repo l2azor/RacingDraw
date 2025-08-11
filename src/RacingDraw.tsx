@@ -51,11 +51,15 @@ export default function RacingDraw() {
 강X웅
 김X민
 이X진
-사람1
-사람2
-사람3
-사람4
-사람5
+김X균
+이X석
+송X빈
+조X희
+신X철
+김X식
+문X범
+성X지
+신X희
 `);
   const participants = useMemo(() => {
     const tokens = rawList.split(/[\n,;]+/).map(s => s.trim()).filter(Boolean);
