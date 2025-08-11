@@ -1,4 +1,5 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+
 
 /** 🏇 경마 레이스 랜덤 추첨기 (Canvas)
  *  - 20초 레이스 + 막판 슬로모(0.6x)
