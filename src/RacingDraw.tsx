@@ -552,7 +552,16 @@ export default function RacingDraw() {
 
   return (
     <div style={{ padding: 16, color: "black", fontFamily: "system-ui, Noto Sans KR, sans-serif" }}>
-      <h2 style={{ margin: "0 0 8px" }}>🏇 경마 레이스 랜덤 추첨기</h2>
+      <h2
+        style={{
+          margin: "0 0 8px",
+          paddingLeft: "12px", // ← 왼쪽 여백 추가
+          textAlign: "center", // ← 가운데 정렬
+          whiteSpace: "nowrap", // ← 줄바꿈 방지
+        }}
+      >
+        🏇 경마 레이스 랜덤 추첨기
+      </h2>
 
       <div style={{ display: "grid", gridTemplateColumns: "320px 1fr", gap: 28, alignItems: "start" }}>
         {/* 좌측 패널 */}
