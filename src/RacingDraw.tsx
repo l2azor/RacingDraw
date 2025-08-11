@@ -547,7 +547,7 @@ export default function RacingDraw() {
   }, []);
 
   return (
-    <div style={{ padding: 16, color: "#e6e6e6", fontFamily: "system-ui, Noto Sans KR, sans-serif" }}>
+    <div style={{ padding: 16, color: "black", fontFamily: "system-ui, Noto Sans KR, sans-serif" }}>
       <h2 style={{ margin: "0 0 8px" }}>🏇 경마 레이스 랜덤 추첨기</h2>
 
       <div style={{ display: "grid", gridTemplateColumns: "320px 1fr", gap: 16 }}>
@@ -560,8 +560,8 @@ export default function RacingDraw() {
             rows={14}
             style={{
               width: "100%",
-              background: "#0d0f12",
-              color: "#e6e6e6",
+              background: "white",
+              color: "black",
               border: "1px solid #222",
               borderRadius: 8,
               padding: 8,
