@@ -550,10 +550,10 @@ export default function RacingDraw() {
     <div style={{ padding: 16, color: "black", fontFamily: "system-ui, Noto Sans KR, sans-serif" }}>
       <h2 style={{ margin: "0 0 8px" }}>🏇 경마 레이스 랜덤 추첨기</h2>
 
-      <div style={{ display: "grid", gridTemplateColumns: "320px 1fr", gap: 16 }}>
+      <div style={{ display: "grid", gridTemplateColumns: "320px 1fr", gap: 28, alignItems: "start" }}>
         {/* 좌측 패널 */}
         <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-          <label style={{ fontSize: 14, opacity: 0.9 }}>참가자 목록</label>
+          <label style={{ fontSize: 14, color: "black" }}>참가자 목록</label>
           <textarea
             value={rawList}
             onChange={(e) => setRawList(e.target.value)}
@@ -573,7 +573,7 @@ export default function RacingDraw() {
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8 }}>
             <div>
-              <label style={{ fontSize: 13, opacity: 0.9 }}>당첨 인원</label>
+              <label style={{ fontSize: 13, color: "black" }}>당첨 인원</label>
               <input
                 type="number"
                 min={1}
@@ -592,7 +592,7 @@ export default function RacingDraw() {
               />
             </div>
             <div>
-              <label style={{ fontSize: 13, opacity: 0.9 }}>시드(선택)</label>
+              <label style={{ fontSize: 13, color: "black" }}>시드(선택)</label>
               <input
                 type="text"
                 value={seedInput}
