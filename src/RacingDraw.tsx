@@ -45,22 +45,17 @@ const seededRandom = (seed: number) => {
 
 export default function RacingDraw() {
   // 참가자
-  const [rawList, setRawList] = useState(`김하늘
-이서준
-박지우
-최서윤
-정민준
-이지아
-한도현
-오수아
-강서연
-윤도윤
-송예린
-조시우
-문나율
-곽하린
-배지호
-신서율`);
+  const [rawList, setRawList] = useState(`강X수
+이X훈
+강X웅
+김X민
+이X진
+사람1
+사람2
+사람3
+사람4
+사람5
+`);
   const participants = useMemo(() => {
     const tokens = rawList.split(/[\n,;]+/).map(s => s.trim()).filter(Boolean);
     return Array.from(new Set(tokens));
