@@ -679,11 +679,18 @@ export default function RacingDraw() {
                 borderRadius: 8,
               }}
             >
-              <div style={{ fontWeight: 700, marginBottom: 8 }}>📋 전체 결과</div>
-              <ol style={{ margin: 0, paddingLeft: 18 }}>
+              <div style={{ fontWeight: 700, marginBottom: 8, color: "#e6e6e6" }}>📋 전체 결과</div>
+              <ol
+                style={{
+                  margin: 0,
+                  paddingLeft: 18,
+                  color: "#ffffff", // ← 숫자 색상 흰색으로 지정
+                  listStyle: "decimal",
+                }}
+              >
                 {allResults.map((r, idx) => (
                   <li key={idx} style={{ lineHeight: 1.6 }}>
-                    <span style={{ color: "#e6e6e6" }}>{r.name}</span>{" "}
+                    <span>{r.name}</span>{" "}
                     <span style={{ color: "#9aa4b2", fontSize: 13 }}>
                       {r.time !== undefined
                         ? `— ${r.time.toFixed(2)}s`
