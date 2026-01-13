@@ -46,20 +46,12 @@ const seededRandom = (seed: number) => {
 
 export default function RacingDraw() {
   // 참가자
-  const [rawList, setRawList] = useState(`강X수
-이X훈
-강X웅
-김X민
-이X진
-김X균
-이X석
-송X빈
-조X희
-신X철
-김X식
-문X범
-성X지
-신X희
+  const [rawList, setRawList] = useState(`1번말 삼식이
+2번말 춘삼이
+3번말 막둥이
+4번말 돌쇠
+5번말 복실이
+6번말 말순이
 `);
   const participants = useMemo(() => {
     const tokens = rawList.split(/[\n,;]+/).map(s => s.trim()).filter(Boolean);
